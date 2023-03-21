@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
   return (
     <div className="header">
-        <h1>Aim Trainer</h1>
+        <h1>Precision Pursuit</h1>
     </div>
   )
 }
