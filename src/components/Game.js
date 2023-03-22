@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import TargetList from './TargetList'
 import StartScreen from './StartScreen'
 import GameHeader from './GameHeader'
+import GameOverScreen from './GameOverScreen'
 
 const Game = () => {
 
   const [isGameStarted, setIsGameStarted] = useState(false)
+  const [isGameOver, setIsGameOver] = useState(false)
   const [difficulty, setDifficulty] = useState("")
   const [speed, setSpeed] = useState("")
   const [colour, setColour] = useState("")
@@ -14,7 +16,7 @@ const Game = () => {
 
   return (
     <div className="gameContainer">
-      {isGameStarted ? (
+      {isGameStarted && !isGameOver? (
         <>
           <GameHeader
           score={score}
@@ -26,11 +28,25 @@ const Game = () => {
           difficulty={difficulty} 
           speed={speed} 
           colour={colour}
-          timer={timer}
           setTimer={setTimer}
+          setScore={setScore}
+          setIsGameOver={setIsGameOver}
         />
         </>
-      ) : (
+      ) : isGameOver ?
+      (
+        <GameOverScreen
+        score={score}
+        setScore={setScore}
+        setTimer={setTimer}
+        setIsGameOver={setIsGameOver}
+        setIsGameStarted={setIsGameStarted}
+        setDifficulty={setDifficulty}
+        setSpeed={setSpeed}
+        setColour={setColour}
+        />
+      ):
+      (
         <StartScreen 
         startGame={setIsGameStarted} 
         setDifficulty={setDifficulty}
