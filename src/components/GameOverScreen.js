@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GameOverScreen = ({ score, setScore, setTimer, setIsGameOver, setIsGameStarted, setDifficulty, setSpeed, setColour }) => {
+const GameOverScreen = ({ score, setScore, setTimer, setIsGameOver, setIsGameStarted, setDifficulty, setSpeed, setColour, totalClicks, setTotalClicks, correctClicks, setCorrectClicks }) => {
   
     const handlePlayAgain = () => {
         setScore(0)
@@ -22,6 +22,7 @@ const GameOverScreen = ({ score, setScore, setTimer, setIsGameOver, setIsGameSta
     <div className="gameOverContainer">
         <h2>Game Over</h2>
         <p>score: {score}</p>
+        <p>accuracy: {parseInt((correctClicks/totalClicks) * 100)}%</p>
         <div className="gameOverBtns">
             <button tabIndex="0" className='gameStart' onClick={handlePlayAgain}>PLAY AGAIN</button>
             <button tabIndex="0" className='gameStart' onClick={handleRestart} >RESTART</button>

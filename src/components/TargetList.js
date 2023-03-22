@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef} from 'react'
 
-const TargetList = ({ difficulty, speed, colour, setTimer, setScore, setIsGameOver }) => {
+const TargetList = ({ difficulty, speed, colour, setTimer, setScore, setIsGameOver, setCorrectClicks, setTotalClicks }) => {
 
   const [targets, setTargets] = useState([])
 
@@ -64,6 +64,7 @@ const TargetList = ({ difficulty, speed, colour, setTimer, setScore, setIsGameOv
   }
 
   const handleTargetClick = (e) => {
+    setCorrectClicks(prev => prev + 1)
     let multiplier
     switch (difficulty) {
       case "hard":
@@ -88,8 +89,12 @@ const TargetList = ({ difficulty, speed, colour, setTimer, setScore, setIsGameOv
     })
   }
 
+  const handleTotalClicks = () => {
+    setTotalClicks(prev => prev + 1)
+  }
+
   return (
-    <div className="targetContainer" ref={targetRef}> 
+    <div onClick={handleTotalClicks} className="targetContainer" ref={targetRef}> 
       { targets.length ?
       
       targets.map((target, index) => {

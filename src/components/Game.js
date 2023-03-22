@@ -13,6 +13,8 @@ const Game = () => {
   const [colour, setColour] = useState("")
   const [score, setScore] = useState(0)
   const [timer, setTimer] = useState(60)
+  const [totalClicks, setTotalClicks] = useState(0)
+  const [correctClicks, setCorrectClicks] = useState(0)
 
   return (
     <div className="gameContainer">
@@ -31,7 +33,9 @@ const Game = () => {
           setTimer={setTimer}
           setScore={setScore}
           setIsGameOver={setIsGameOver}
-        />
+          setCorrectClicks={setCorrectClicks}
+          setTotalClicks={setTotalClicks}
+/>
         </>
       ) : isGameOver ?
       (
@@ -44,6 +48,10 @@ const Game = () => {
         setDifficulty={setDifficulty}
         setSpeed={setSpeed}
         setColour={setColour}
+        totalClicks={totalClicks}
+        setTotalClicks={setTotalClicks}
+        correctClicks={correctClicks}
+        setCorrectClicks={setCorrectClicks}
         />
       ):
       (
