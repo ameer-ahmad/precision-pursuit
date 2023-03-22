@@ -67,7 +67,7 @@ code {
   color: white;
 }
 
-.startContainer h2 {
+.startContainer h2, .gameOverContainer h2 {
   font-size: 28px;
 }
 
