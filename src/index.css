@@ -55,13 +55,6 @@ code {
   overflow: hidden;
 }
 
-.target {
-  width: 75px;
-  height: 75px;
-  border-radius:50%;
-  background-color: blue;
-  display: none;
-}
 
 .startContainer {
   width: 100%;
@@ -104,4 +97,18 @@ code {
   background-color: white;
   color:black;
   width: 200px;
+}
+
+.targetContainer {
+  width: 100%;
+  height: 95%;
+  overflow: hidden;
+}
+
+.gameHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  padding: 0 10px;
 }
