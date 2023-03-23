@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Precision Pursuit
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Precision Pursuit, an aim trainer game for all you FPS gamers to improve your aim.
 
-## Available Scripts
+View the deployed app here: https://precision-pursuit.netlify.app/
 
-In the project directory, you can run:
+Project Description: Users of all different skills levels can use Precision Pursuit to improve their accuracy. This is a game where you have 60s to hit as many targets as you can. The targets spawn on random spots on the screen and disappear after a few seconds if you don't hit them. You can choose from 3 different difficulties: easy, medium, and hard. The different difficulties change the size of the targets you must hit. You can choose from 3 different speeds: slow, normal, and fast. The different speeds change the time that the targets are on the screen before they disappear. You can also customize the targets to whatever colour you like.
 
+The features of the app include:
+- Choose from different difficulties/speeds based on your skill
+- Keep track of your score and your accuracy level
+- Change the colour of the targets to your preference
+
+Some features I would like to include in the future:
+- A high score feature that saves your highest score to local storage
+- Increase the size of the targets the longer they are on the screen, more points the smaller the target is
+- Ability to change your cursor to a customizable cross hair you would use in game
+- Different game modes like how long does it take to hit 100 targets
+
+## Local Build
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots
 
-### `npm test`
+The apps start screen with no options selected
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![1](public/screenshot1.png)
 
-### `npm run build`
+The apps start screen when you click start without selecting all options
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![2](public/screenshot2.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app on easy difficulty
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![3](public/screenshot3.png)
 
-### `npm run eject`
+The app on medium difficulty
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![4](public/screenshot4.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The app on hard difficulty
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![5](public/screenshot5.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The apps game over screen
 
-## Learn More
+![6](public/screenshot6.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The app on a mobile screen
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![7](public/screenshot7.png)
